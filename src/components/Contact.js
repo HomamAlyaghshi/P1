@@ -1,62 +1,59 @@
 import React from "react";
 import Header from "../comp/Header";
-import InputForm from "../comp/inputForm";
+import InputForm from "../comp/inputForm"; // تأكد من اسم الملف صحيح
 import Footer from "../comp/Footer";
 import Map from "../comp/Map";
+
 const Contact = () => {
   return (
     <>
       <Header />
-      <div className="h-screen grid grid-rows-2 pt-3 bg-gray-100 ">
+      <div className="bg-gray-100 p-4 sm:p-6 lg:p-8">
         {/* القسم العلوي */}
-        <div className="flex-1  grid grid-cols-2  ">
-          <div className=" flex justify-start items-start p-20 flex-col  ">
-            <p className=" text-3xl pb-5 font-bold  ">Contact Info:</p>
-            <p className="text-zinc-500 font-sans">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
+          <div className="flex flex-col justify-center p-4 lg:p-8 bg-white shadow-md rounded-lg">
+            <p className="text-2xl lg:text-3xl font-bold mb-4">Contact Info:</p>
+            <p className="text-zinc-500 mb-2">
               To give beginning divide, cattle. Give moving
             </p>
-            <p className="text-zinc-500 font-sans">
+            <p className="text-zinc-500 mb-2">
               won't, there the abundantly she'd brought air
             </p>
-            <p className="text-zinc-500 font-sans">
+            <p className="text-zinc-500 mb-2">
               upon. Light hath subdue. Life days creature upon
             </p>
-            <p className="text-zinc-500 font-sans">
-              first heaven gathering dry
-            </p>
+            <p className="text-zinc-500 mb-4">first heaven gathering dry</p>
 
-            <div className=" flex flex-row mt-2 ">
-              <div className=" flex flex-col mr-2">
-                <label className="font-bold ">Address:</label>
-                <label className="font-bold ">Phone:</label>
-                <label className="font-bold ">Email:</label>
-                <label className="font-bold ">Fax:</label>
+            <div className="flex flex-col sm:flex-row sm:space-x-6">
+              <div className="flex flex-col mb-4 sm:mb-0">
+                <label className="font-bold mb-1">Address:</label>
+                <label className="font-bold mb-1">Phone:</label>
+                <label className="font-bold mb-1">Email:</label>
+                <label className="font-bold">Fax:</label>
               </div>
 
-              <div className=" flex flex-col w-full ">
-                <label className="text-zinc-500">
+              <div className="flex flex-col">
+                <label className="text-zinc-500 mb-1">
                   10111 Santa Monica Boulevard, LA
                 </label>
-                <label className="text-zinc-500">+44 987 065 908</label>
-                <label className="text-zinc-500">info@Eample.com</label>
+                <label className="text-zinc-500 mb-1">+44 987 065 908</label>
+                <label className="text-zinc-500 mb-1">info@Example.com</label>
                 <label className="text-zinc-500">+44 987 065 908</label>
               </div>
             </div>
           </div>
 
-          <div className=" flex justify-center items-center ">
+          <div className="flex justify-center items-center">
             <InputForm />
           </div>
         </div>
 
         {/* القسم السفلي */}
-        <div className=" flex justify-center items-center mt-60 ">
-          <Map></Map>
+        <div className="flex justify-center items-center">
+          <Map />
         </div>
       </div>
-      <div className="mt-40">
-        <Footer />
-      </div>
+      <Footer />
     </>
   );
 };

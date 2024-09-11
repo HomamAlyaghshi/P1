@@ -8,64 +8,60 @@ import Footer from "../comp/Footer";
 import { Link } from "react-router-dom";
 const OnePage = () => {
   return (
-    <div className=" ">
-      {/* هاد العنصر الأول */}
-      <div className="w-full h-auto bg-blue-500  ">
-        <div className="grid grid-flow-row">
-          <div
-            className="relative w-full h-screen bg-cover bg-center" //relative : مشان نحط عناصر فوق بعض
-            style={{ backgroundImage: "url('/images/cover.jpg')" }}
-          >
-            <div className="flex flex-row justify-end m-6 gap-10 mr-20">
-              <Link to="/home-page">
-                <button className="font-mono text-sm  hover:text-cyan-400 py-2 px-4 rounded">
-                  HOME
-                </button>
-              </Link>
-              <Link to="/about">
-                <button className="font-mono text-sm  hover:text-cyan-400 py-2 px-4 rounded">
-                  ABOUT
-                </button>
-              </Link>
-              <Link to="/project-single">
-                <button className="font-mono text-sm  hover:text-cyan-400 py-2 px-4 rounded">
-                  WORK
-                </button>
-              </Link>
-              <button className="font-mono text-sm  hover:text-cyan-400 py-2 px-4 rounded">
-                PROCESS
+    <div>
+      {/* Hero Section */}
+      <div className="w-full h-screen bg-blue-500 relative">
+        <div
+          className="relative w-full h-full bg-cover bg-center"
+          style={{ backgroundImage: "url('/images/cover.jpg')" }}
+        >
+          {/* Navigation Buttons */}
+          <div className="flex flex-wrap justify-end p-4 gap-4 sm:gap-6 md:gap-8 lg:gap-10 absolute top-0 right-0 mr-4 lg:mr-20">
+            <Link to="/home-page">
+              <button className="font-mono text-xs sm:text-sm hover:text-cyan-400 py-2 px-4 rounded">
+                HOME
               </button>
-              <button className="font-mono text-sm  hover:text-cyan-400 py-2 px-4 rounded">
-                SERVICES
+            </Link>
+            <Link to="/about">
+              <button className="font-mono text-xs sm:text-sm hover:text-cyan-400 py-2 px-4 rounded">
+                ABOUT
               </button>
-              <button className="font-mono text-sm  hover:text-cyan-400 py-2 px-4 rounded">
-                TESTIMONIALS
+            </Link>
+            <Link to="/project-single">
+              <button className="font-mono text-xs sm:text-sm hover:text-cyan-400 py-2 px-4 rounded">
+                WORK
               </button>
-              <Link to="/contact">
-                <button className="font-mono text-sm  hover:text-cyan-400 py-2 px-4 rounded">
-                  CONTACT
-                </button>
-              </Link>
-            </div>
+            </Link>
+            <button className="font-mono text-xs sm:text-sm hover:text-cyan-400 py-2 px-4 rounded">
+              PROCESS
+            </button>
+            <button className="font-mono text-xs sm:text-sm hover:text-cyan-400 py-2 px-4 rounded">
+              SERVICES
+            </button>
+            <button className="font-mono text-xs sm:text-sm hover:text-cyan-400 py-2 px-4 rounded">
+              TESTIMONIALS
+            </button>
+            <Link to="/contact">
+              <button className="font-mono text-xs sm:text-sm hover:text-cyan-400 py-2 px-4 rounded">
+                CONTACT
+              </button>
+            </Link>
+          </div>
 
-            <div className="absolute inset-0 flex place-items-start justify-end mr-24 mt-60  text-center p-4">
-              <div>
-                <h1 className="text-4xl font-bold font-mono text-gray-950 ">
-                  We Design and Develop
-                </h1>
-                <div className="mt-4 text-left text-slate-500">
-                  <p>We are a new design studio based in USA. We have over</p>
-                  <p>
-                    20 years of combined experience, and know a thing or two
-                  </p>
-                  <p>about designing websites and mobile apps</p>
-                  <Link to="/contact">
-                    <button className="bg-cyan-500 mt-6 pt-2 pr-6 pl-6 pb-2 text-white font-mono">
-                      CONTACT US
-                    </button>
-                  </Link>
-                </div>
-              </div>
+          {/* Hero Text */}
+          <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center md:text-left md:items-start md:justify-end md:mr-24 md:mt-40">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold font-mono text-gray-950">
+              We Design and Develop
+            </h1>
+            <div className="mt-4 text-slate-500">
+              <p>We are a new design studio based in the USA. We have over</p>
+              <p>20 years of combined experience and know a thing or two</p>
+              <p>about designing websites and mobile apps.</p>
+              <Link to="/contact">
+                <button className="bg-cyan-500 mt-6 px-6 py-2 text-white font-mono rounded">
+                  CONTACT US
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -92,20 +88,27 @@ const OnePage = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-auto grid grid-cols-2  bg-gray-100 justify-center items-center ">
-        {/**العمود الاول */}
-        <div className="flex flex-col items-start ml-20 mb-20">
-          <h1 className="font-bold text-3xl mb-4">Professional Skills</h1>
+      <div className="w-full h-auto grid grid-cols-1 md:grid-cols-2 gap-8 bg-gray-100 p-6">
+        {/* العمود الأول */}
+        <div className="flex flex-col items-start ml-4 md:ml-20 mb-8 md:mb-20">
+          <h1 className="font-bold text-2xl md:text-3xl mb-4">
+            Professional Skills
+          </h1>
           <label className="mb-2 text-sm font-semibold">UI/UX DESIGN</label>
           <Slider initialValue={75} />
-          <label className="mb-2 text-sm font-semibold">WEB DEVELOPMENTS</label>
+          <label className="mb-2 text-sm font-semibold">WEB DEVELOPMENT</label>
           <Slider initialValue={90} />
-          <label className="mb-2 text-sm font-semibold">MARKETING </label>
+          <label className="mb-2 text-sm font-semibold">MARKETING</label>
           <Slider initialValue={65} />
         </div>
-        {/**العمود الثاني */}
-        <div>
-          <img alt="13" src="/images/13.PNG"></img>
+
+        {/* العمود الثاني */}
+        <div className="flex justify-center">
+          <img
+            alt="13"
+            src="/images/13.PNG"
+            className="w-full max-w-xs md:max-w-md lg:max-w-lg"
+          />
         </div>
       </div>
       <div className="w-full h-auto ">
@@ -153,11 +156,11 @@ const OnePage = () => {
         </div>
       </div>
       <div className="bg-white">
-        <div className="flex justify-between items-center p-4 ">
-          <img alt="logo1" src="/images/l1.PNG" className=""></img>
-          <img alt="logo2" src="/images/l3.PNG " className=""></img>
-          <img alt="logo3" src="/images/l4.PNG " className=""></img>
-          <img alt="logo4" src="/images/l5.PNG " className=""></img>
+        <div className="flex justify-between items-center p-4 flex-wrap">
+          <img alt="logo1" src="/images/l1.PNG" className="w-16 sm:w-24" />
+          <img alt="logo2" src="/images/l3.PNG" className="w-16 sm:w-24" />
+          <img alt="logo3" src="/images/l4.PNG" className="w-16 sm:w-24" />
+          <img alt="logo4" src="/images/l5.PNG" className="w-16 sm:w-24" />
         </div>
       </div>
       <NeedPro />

@@ -5,25 +5,26 @@ import GridPic from "../comp/GridPic";
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen flex flex-col ">
-      <Header></Header>
+    <div className="min-h-screen flex flex-col">
+      <Header />
 
-      {/* the text */}
-
-      <div className="flex-grow flex flex-col items-center justify-start p-10 bg-slate-100 overflow-auto h-48 max-h-80">
-        <p className="text-2xl font-bold mb-5">UI/UX & Graphic Designer</p>
-        <p className="text-gray-400">
-          i am a Graphic & web Designer based in New York,specializing
+      {/* النصوص */}
+      <div className="flex-grow flex flex-col items-center justify-center p-10 bg-slate-100 text-center">
+        <p className="text-2xl md:text-3xl font-bold mb-5">
+          UI/UX & Graphic Designer
         </p>
-        <p className="text-gray-400">
-          in User interface Design and Develpoment
+        <p className="text-gray-500 mb-3">
+          I am a Graphic & Web Designer based in New York, specializing
+        </p>
+        <p className="text-gray-500">
+          in User Interface Design and Development
         </p>
       </div>
 
       <GridPic />
 
-      {/* footer  */}
-      <Footer></Footer>
+      {/* الفوتر */}
+      <Footer />
     </div>
   );
 };
