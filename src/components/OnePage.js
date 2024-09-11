@@ -49,7 +49,7 @@ const OnePage = () => {
           </div>
 
           {/* Hero Text */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center md:text-left md:items-start md:justify-end md:mr-24 md:mt-40">
+          <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center md:text-center md:items-center md:justify-center md:mr-0 md:mt-0">
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold font-mono text-gray-950">
               We Design and Develop
             </h1>

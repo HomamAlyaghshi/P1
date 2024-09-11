@@ -8,14 +8,14 @@ const SliderComponent = (props) => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center w-full ">
       <input
         type="range"
         min="0"
         max="100"
         value={value}
         onChange={handleChange}
-        className="w-full max-w-xs md:max-w-md lg:max-w-lg h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-cyan-500"
+        className="w-full max-w-xs md:max-w-md lg:max-w-4xl h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-cyan-500"
       />
       <div className="mt-4 text-xl font-bold">{value}%</div>
     </div>
