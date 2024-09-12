@@ -56,13 +56,13 @@ const items = [
 
 const GraySlid = () => {
   return (
-    <div className="w-full flex flex-wrap justify-center bg-slate-200 p-4 md:p-8 lg:p-16">
+    <div className="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center bg-slate-200 p-4 md:p-8 lg:p-16">
       {items.map((item, index) => {
         const IconComponent = item.icon;
         return (
           <div
             key={index}
-            className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4 flex items-center justify-center text-center"
+            className="p-4 flex items-center justify-center text-center"
           >
             <div className="flex flex-col items-center">
               <IconComponent className="w-8 h-8 text-cyan-600" />

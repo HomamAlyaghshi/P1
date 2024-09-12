@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-neutral-950 text-white p-6 shadow-2xl">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {/* العمود الأول */}
           <div className="flex flex-col justify-center text-center sm:text-left">
             <p className="font-bold text-sm mb-2">Piroll Design, inc.</p>
