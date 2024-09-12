@@ -157,10 +157,10 @@ const OnePage = () => {
       </div>
       <div className="bg-white">
         <div className="flex justify-between items-center p-4 flex-wrap">
-          <img alt="logo1" src="/images/l1.PNG" className="w-16 sm:w-24" />
-          <img alt="logo2" src="/images/l3.PNG" className="w-16 sm:w-24" />
-          <img alt="logo3" src="/images/l4.PNG" className="w-16 sm:w-24" />
-          <img alt="logo4" src="/images/l5.PNG" className="w-16 sm:w-24" />
+          <img alt="logo1" src="/images/l1.png" className="w-16 sm:w-24" />
+          <img alt="logo2" src="/images/l3.png" className="w-16 sm:w-24" />
+          <img alt="logo3" src="/images/l4.png" className="w-16 sm:w-24" />
+          <img alt="logo4" src="/images/l5.png" className="w-16 sm:w-24" />
         </div>
       </div>
       <NeedPro />
