@@ -8,10 +8,10 @@ const Contact = () => {
   return (
     <>
       <Header />
-      <div className="bg-gray-100 p-4 sm:p-6 lg:p-8">
+      <div className="bg-gray-200 p-4 sm:p-6 lg:p-8">
         {/* القسم العلوي */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-12">
-          <div className="flex flex-col justify-center p-4 lg:p-8 bg-white shadow-md rounded-lg">
+          <div className="flex flex-col justify-center p-4 lg:p-8  ">
             <p className="text-2xl lg:text-3xl font-bold mb-4">Contact Info:</p>
             <p className="text-zinc-500 mb-2">
               To give beginning divide, cattle. Give moving

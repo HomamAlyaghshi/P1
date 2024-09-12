@@ -4,8 +4,8 @@ const InputForm = () => {
   return (
     <form className="w-full max-w-4xl mx-auto p-4">
       <div className="border-b border-gray-300 pb-12">
-        <div className="mt-10 grid grid-cols-1 gap-y-8 sm:grid-cols-2 md:grid-cols-4 gap-x-6">
-          {/* اسم */}
+        <div className="mt-10 grid grid-cols-1 gap-y-8 sm:grid-cols-2 gap-x-6">
+          {/* Name */}
           <div className="sm:col-span-1">
             <div className="mt-2">
               <input
@@ -19,7 +19,7 @@ const InputForm = () => {
             </div>
           </div>
 
-          {/* بريد إلكتروني */}
+          {/* Email */}
           <div className="sm:col-span-1">
             <div className="mt-2">
               <input
@@ -33,8 +33,8 @@ const InputForm = () => {
             </div>
           </div>
 
-          {/* عنوان */}
-          <div className="sm:col-span-2">
+          {/* Title */}
+          <div className="col-span-full">
             <div className="mt-2">
               <input
                 type="text"
@@ -47,8 +47,8 @@ const InputForm = () => {
             </div>
           </div>
 
-          {/* تعليق */}
-          <div className="sm:col-span-2">
+          {/* Comment */}
+          <div className="col-span-full">
             <div className="mt-2">
               <textarea
                 placeholder="Your Comment"
