@@ -16,7 +16,7 @@ const OnePage = () => {
           style={{ backgroundImage: "url('/images/cover.jpg')" }}
         >
           {/* Navigation Buttons */}
-          <div className="flex flex-wrap justify-end p-4 gap-4 sm:gap-6 md:gap-8 lg:gap-10 absolute top-0 right-0 mr-4 lg:mr-20">
+          <div className="flex flex-wrap justify-end p-4 gap-4 sm:gap-6 md:gap-8 lg:gap-10 absolute top-0 right-0 mr-4 lg:mr-20 z-10">
             <Link to="/home-page">
               <button className="font-mono text-xs sm:text-sm hover:text-cyan-400 py-2 px-4 rounded">
                 HOME
