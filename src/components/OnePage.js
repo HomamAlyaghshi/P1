@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Slider from "../comp/Slider";
 import BlueSlide from "../comp/BlueSlide";
 import GridPic from "../comp/GridPic";
@@ -6,17 +6,92 @@ import GraySlid from "../comp/GraySlide";
 import NeedPro from "./../comp/NeedPro";
 import Footer from "../comp/Footer";
 import { Link } from "react-router-dom";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"; // استيراد أيقونات القائمة
+
 const OnePage = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
     <div>
       {/* Hero Section */}
       <div className="w-full h-screen bg-blue-500 relative">
+        {/* Background Image */}
         <div
           className="relative w-full h-full bg-cover bg-center"
           style={{ backgroundImage: "url('/images/cover.jpg')" }}
         >
-          {/* Navigation Buttons */}
-          <div className="flex flex-wrap justify-end p-4 gap-4 sm:gap-6 md:gap-8 lg:gap-10 absolute top-0 right-0 mr-4 lg:mr-20 z-10">
+          {/* Burger Menu Icon - يظهر فقط على الموبايل */}
+          <div className="sm:hidden absolute top-4 right-4 z-10">
+            <button onClick={toggleMenu} className="p-2">
+              {!isMenuOpen ? (
+                <Bars3Icon className="h-8 w-8 text-black" />
+              ) : (
+                <XMarkIcon className="h-8 w-8 text-black" />
+              )}
+            </button>
+          </div>
+
+          {/* Navigation Menu - يظهر فقط عند فتح القائمة على الموبايل */}
+          <div
+            className={`sm:hidden  fixed top-0 right-0 h-full w-1/2 bg-gray-100 z-20 transition-transform duration-300 ${
+              isMenuOpen ? "translate-x-0" : "translate-x-full"
+            }`}
+          >
+            {/* Close Button */}
+            <button
+              className="absolute top-4 right-4 text-black"
+              onClick={toggleMenu}
+            >
+              <XMarkIcon className="h-8 w-8" />
+            </button>
+
+            {/* Navigation Links */}
+            <div className="flex flex-col justify-center items-center mt-16 space-y-6 p-4 text-black">
+              <Link to="/home-page" onClick={toggleMenu}>
+                <button className="font-mono text-lg hover:text-cyan-400">
+                  HOME
+                </button>
+              </Link>
+              <Link to="/about" onClick={toggleMenu}>
+                <button className="font-mono text-lg hover:text-cyan-400">
+                  ABOUT
+                </button>
+              </Link>
+              <Link to="/project-single" onClick={toggleMenu}>
+                <button className="font-mono text-lg hover:text-cyan-400">
+                  WORK
+                </button>
+              </Link>
+              <button
+                className="font-mono text-lg hover:text-cyan-400"
+                onClick={toggleMenu}
+              >
+                PROCESS
+              </button>
+              <button
+                className="font-mono text-lg hover:text-cyan-400"
+                onClick={toggleMenu}
+              >
+                SERVICES
+              </button>
+              <button
+                className="font-mono text-lg hover:text-cyan-400"
+                onClick={toggleMenu}
+              >
+                TESTIMONIALS
+              </button>
+              <Link to="/contact" onClick={toggleMenu}>
+                <button className="font-mono text-lg hover:text-cyan-400">
+                  CONTACT
+                </button>
+              </Link>
+            </div>
+          </div>
+
+          {/* Navigation Buttons for larger screens */}
+          <div className="hidden sm:flex flex-wrap justify-end p-4 gap-4 sm:gap-6 md:gap-8 lg:gap-10 absolute top-0 right-0 mr-4 lg:mr-20 z-10">
             <Link to="/home-page">
               <button className="font-mono text-xs sm:text-sm hover:text-cyan-400 py-2 px-4 rounded">
                 HOME
@@ -103,11 +178,11 @@ const OnePage = () => {
         </div>
 
         {/* العمود الثاني */}
-        <div className="flex justify-center">
+        <div className="flex justify-center ">
           <img
             alt="13"
             src="/images/13.PNG"
-            className="w-full max-w-xs md:max-w-md lg:max-w-lg"
+            className=" max-w-xs md:max-w-md lg:max-w-lg"
           />
         </div>
       </div>
