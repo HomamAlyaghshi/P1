@@ -193,7 +193,7 @@ const OnePage = () => {
         <GridPic />
       </div>
       {/* العنصر تحت الصور */}
-      <div className="w-full h-auto ">
+      <div className="w-full h-auto flex justify-center items-center text-center ">
         <div className="mt-28 mb-8 flex justify-center items-center flex-col">
           <h1 className="font-bold font-mono text-4xl text-slate-950 mb-8">
             Our Work Proccess
