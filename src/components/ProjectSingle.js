@@ -1,9 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../comp/Header";
 import { FiGrid } from "react-icons/fi";
 import Footer from "../comp/Footer";
 
-const PropjectSingle = () => {
+const projects = [
+  {
+    id: 1,
+    image: "/images/12.jpg",
+    title: "Project 1",
+    description: "Description for project 1.",
+    client: "Emma Morris",
+    date: "25.06.2017",
+  },
+  {
+    id: 2,
+    image: "/images/10.jpg",
+    title: "Project 2",
+    description: "Description for project 2.",
+    client: "John Doe",
+    date: "15.08.2018",
+  },
+  {
+    id: 3,
+    image: "/images/11.jpg",
+    title: "Project 3",
+    description: "Description for project 3.",
+    client: "Jane Smith",
+    date: "10.12.2019",
+  },
+  // يمكنك إضافة المزيد من المشاريع هنا
+];
+
+const ProjectSingle = () => {
+  const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
+
+  const goToPreviousProject = () => {
+    setCurrentProjectIndex((prevIndex) =>
+      prevIndex === 0 ? projects.length - 1 : prevIndex - 1
+    );
+  };
+
+  const goToNextProject = () => {
+    setCurrentProjectIndex((prevIndex) =>
+      prevIndex === projects.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const currentProject = projects[currentProjectIndex];
+
   return (
     <div>
       <Header />
@@ -12,33 +56,22 @@ const PropjectSingle = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-4 lg:p-8">
           <div className="flex flex-col justify-start p-4 lg:p-8 bg-white shadow-md rounded-lg">
             <p className="text-2xl lg:text-3xl font-bold mb-4">
-              Light Breakfast
+              {currentProject.title}
             </p>
-            <p className="text-zinc-500 mb-2">
-              Light his can't a creeping. Be bring blessed night. Replenish
-            </p>
-            <p className="text-zinc-500 mb-2">
-              blessed creature good. Saw earth every creepeth lights day.
-            </p>
-            <p className="text-zinc-500 mb-2">
-              divided abundanlty from In. Said given lights. Sixth the male.
-            </p>
-            <p className="text-zinc-500 mb-2">
-              Upon their multiply. Kind beast. Him tree upon
-            </p>
+            <p className="text-zinc-500 mb-2">{currentProject.description}</p>
             <p className="text-zinc-500 mt-6 mb-2">
               Cattle. Dominion day herb she'd creeping divide darkness.
             </p>
-            <p className="text-zinc-500 mb-4">Which. Subdue had.</p>
 
             <div className="flex flex-col sm:flex-row sm:space-x-6">
               <div className="flex flex-col mb-4 sm:mb-0">
                 <label className=" mb-1">
-                  <strong>Client: </strong>Emma Morris
+                  <strong>Client: </strong>
+                  {currentProject.client}
                 </label>
                 <label className=" mb-1">
                   {" "}
-                  <strong>Date:</strong> 25.06.2017
+                  <strong>Date:</strong> {currentProject.date}
                 </label>
                 <label className=" mb-1">
                   <strong>Share:</strong> Facebook, Twitter, Pinterest
@@ -49,8 +82,8 @@ const PropjectSingle = () => {
 
           <div className="flex items-center justify-center">
             <img
-              src="/images/12.jpg"
-              alt="project1"
+              src={currentProject.image}
+              alt={currentProject.title}
               className="w-full h-auto object-cover rounded-lg shadow-md"
             />
           </div>
@@ -58,13 +91,19 @@ const PropjectSingle = () => {
 
         {/* السطر الثاني */}
         <div className="bg-white p-4 lg:p-6 text-black flex justify-between items-center shadow-md">
-          <button className="font-mono font-bold  hover:underline">
+          <button
+            onClick={goToPreviousProject}
+            className="font-mono font-bold  hover:underline"
+          >
             &lt; PREVIOUS PROJECT
           </button>
           <span className="text-xl font-bold ">
             <FiGrid size={24} />
           </span>
-          <button className="font-mono font-bold  hover:underline">
+          <button
+            onClick={goToNextProject}
+            className="font-mono font-bold  hover:underline"
+          >
             NEXT PROJECT &gt;
           </button>
         </div>
@@ -74,4 +113,4 @@ const PropjectSingle = () => {
   );
 };
 
-export default PropjectSingle;
+export default ProjectSingle;
