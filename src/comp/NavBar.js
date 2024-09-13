@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <header className="bg-white text-black p-4 flex justify-between items-center shadow-lg">
       {/* Logo */}
-      <Link to="/">
+      <Link to="/main">
         <button className="bg-cyan-100 rounded-2xl p-2 hover:bg-cyan-600 hover:p-2.5 hover:text-white transition-all duration-500 ease-out delay-300">
           Main Page
         </button>

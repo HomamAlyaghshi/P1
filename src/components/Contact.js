@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../comp/Header";
+import Header from "../comp/NavBar";
 import InputForm from "../comp/inputForm"; // تأكد من اسم الملف صحيح
 import Footer from "../comp/Footer";
 import Map from "../comp/Map";

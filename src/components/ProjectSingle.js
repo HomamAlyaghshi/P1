@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Header from "../comp/Header";
+import Header from "../comp/NavBar";
 import { FiGrid } from "react-icons/fi";
 import Footer from "../comp/Footer";
 

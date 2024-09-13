@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../comp/Header";
+import Header from "../comp/NavBar";
 import Footer from "../comp/Footer";
 import GridPic from "../comp/GridPic";
 
