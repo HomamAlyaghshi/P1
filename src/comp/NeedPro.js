@@ -54,7 +54,7 @@ const NeedPro = () => {
           </div>
 
           <div className="flex justify-center">
-            <button className="bg-cyan-500 text-white py-2 px-6 rounded-md font-mono hover:bg-cyan-600 focus:outline-none focus:ring-2 focus:ring-cyan-500">
+            <button className="bg-cyan-500 text-white py-2 px-6 rounded-md font-mono  focus:outline-none focus:ring-2 focus:ring-cyan-500 hover:bg-cyan-600 hover:text-xl hover:text-black transition-all duration-700">
               Send Message
             </button>
           </div>

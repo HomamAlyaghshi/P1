@@ -13,7 +13,7 @@ const Header = () => {
     <header className="bg-white text-black p-4 flex justify-between items-center shadow-lg">
       {/* Logo */}
       <Link to="/">
-        <button className="bg-cyan-100 rounded-2xl p-2 hover:bg-cyan-600 hover:p-2.5 hover:text-white transition-all duration-500">
+        <button className="bg-cyan-100 rounded-2xl p-2 hover:bg-cyan-600 hover:p-2.5 hover:text-white transition-all duration-500 ease-out delay-300">
           Main Page
         </button>
       </Link>
@@ -32,17 +32,17 @@ const Header = () => {
       {/* Desktop Menu */}
       <div className="hidden sm:flex space-x-4 ml-auto">
         <Link to="/home-page">
-          <button className="text-black hover:text-blue-700 px-4 py-2 rounded font-mono">
+          <button className="text-black    px-4 py-2 rounded font-mono hover:text-xl hover:text-blue-700 hover:bg-gray-200 transition-all duration-500 ease-out delay-100 ">
             HOME
           </button>
         </Link>
         <Link to="/about">
-          <button className="text-black hover:text-blue-700 px-4 py-2 rounded font-mono">
+          <button className="text-black hover:text-blue-700 px-4 py-2 rounded font-mono hover:text-xl hover:bg-gray-200 transition-all duration-500 ease-out delay-100">
             ABOUT
           </button>
         </Link>
         <Link to="/contact">
-          <button className="text-black hover:text-blue-700 px-4 py-2 rounded font-mono">
+          <button className="text-black hover:text-blue-700 px-4 py-2 rounded font-mono hover:text-xl hover:bg-gray-200 transition-all duration-500 ease-out delay-100">
             CONTACT
           </button>
         </Link>

@@ -46,10 +46,10 @@ const GridPic = () => {
             <img
               src={`/images/q${(index % 6) + 1}.PNG`} // Cycle through images 1 to 6
               alt={`صورة ${index + 1}`}
-              className="object-cover w-full h-full"
+              className="object-cover w-full h-full hover:text-3xl"
             />
-            <div className="absolute inset-0 bg-cyan-500 opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-center justify-center">
-              <EyeIcon className="h-8 w-8 text-white" /> {/* أيقونة العين */}
+            <div className="absolute inset-0 bg-cyan-500 opacity-0 group-hover:opacity-90 transition-all duration-700 flex items-center justify-center ">
+              <EyeIcon className="h-8 w-8 text-white " /> {/* أيقونة العين */}
             </div>
           </div>
         ))}

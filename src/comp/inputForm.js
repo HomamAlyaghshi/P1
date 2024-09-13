@@ -59,7 +59,7 @@ const InputForm = () => {
                 rows="4"
               />
             </div>
-            <button className="mt-4 bg-cyan-500 p-3 text-white font-mono rounded-md">
+            <button className="mt-4 bg-cyan-500 p-3 text-white font-mono rounded-md hover:bg-cyan-600 hover:text-xl hover:text-black transition-all duration-700 ">
               Send Message
             </button>
           </div>

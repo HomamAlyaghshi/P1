@@ -93,31 +93,31 @@ const OnePage = () => {
           {/* Navigation Buttons for larger screens */}
           <div className="hidden sm:flex flex-wrap justify-end p-4 gap-4 sm:gap-6 md:gap-8 lg:gap-10 absolute top-0 right-0 mr-4 lg:mr-20 z-10">
             <Link to="/home-page">
-              <button className="font-mono text-xs sm:text-sm hover:text-cyan-400 py-2 px-4 rounded">
+              <button className="font-mono text-xs sm:text-sm hover:text-cyan-400 py-2 px-4 rounded hover:bg-gray-200 transition-all duration-500 ease-out delay-100 hover:text-xl">
                 HOME
               </button>
             </Link>
             <Link to="/about">
-              <button className="font-mono text-xs sm:text-sm hover:text-cyan-400 py-2 px-4 rounded">
+              <button className="font-mono text-xs sm:text-sm hover:text-cyan-400 py-2 px-4 rounded hover:bg-gray-200 transition-all duration-500 ease-out delay-100 hover:text-xl ">
                 ABOUT
               </button>
             </Link>
             <Link to="/project-single">
-              <button className="font-mono text-xs sm:text-sm hover:text-cyan-400 py-2 px-4 rounded">
+              <button className="font-mono text-xs sm:text-sm hover:text-cyan-400 py-2 px-4 rounded hover:bg-gray-200 transition-all duration-500 ease-out delay-100 hover:text-xl">
                 WORK
               </button>
             </Link>
-            <button className="font-mono text-xs sm:text-sm hover:text-cyan-400 py-2 px-4 rounded">
+            <button className="font-mono text-xs sm:text-sm hover:text-cyan-400 py-2 px-4 rounded hover:bg-gray-200 transition-all duration-500 ease-out delay-100 hover:text-xl">
               PROCESS
             </button>
-            <button className="font-mono text-xs sm:text-sm hover:text-cyan-400 py-2 px-4 rounded">
+            <button className="font-mono text-xs sm:text-sm hover:text-cyan-400 py-2 px-4 rounded hover:bg-gray-200 transition-all duration-500 ease-out delay-100 hover:text-xl">
               SERVICES
             </button>
-            <button className="font-mono text-xs sm:text-sm hover:text-cyan-400 py-2 px-4 rounded">
+            <button className="font-mono text-xs sm:text-sm hover:text-cyan-400 py-2 px-4 rounded hover:bg-gray-200 transition-all duration-500 ease-out delay-100 hover:text-xl">
               TESTIMONIALS
             </button>
             <Link to="/contact">
-              <button className="font-mono text-xs sm:text-sm hover:text-cyan-400 py-2 px-4 rounded">
+              <button className="font-mono text-xs sm:text-sm hover:text-cyan-400 py-2 px-4 rounded hover:bg-gray-200 transition-all duration-500 ease-out delay-100 hover:text-xl ">
                 CONTACT
               </button>
             </Link>
@@ -133,7 +133,7 @@ const OnePage = () => {
               <p>20 years of combined experience and know a thing or two</p>
               <p>about designing websites and mobile apps.</p>
               <Link to="/contact">
-                <button className="bg-cyan-500 mt-6 px-6 py-2 text-white font-mono rounded">
+                <button className="bg-cyan-500 mt-6 px-6 py-2 text-white font-mono rounded hover:bg-cyan-600 hover:text-xl hover:text-black transition-all duration-700">
                   CONTACT US
                 </button>
               </Link>
@@ -230,8 +230,8 @@ const OnePage = () => {
           <p className="text-xs mt-6">MICHAEL HOPKINS</p>
         </div>
       </div>
-      <div className="bg-white">
-        <div className="flex justify-between items-center p-4 flex-wrap">
+      <div className="bg-white ">
+        <div className="flex justify-between items-center p-4 m-6 flex-wrap">
           <img alt="logo1" src="/images/l1.png" className="w-16 sm:w-24" />
           <img alt="logo2" src="/images/l3.png" className="w-16 sm:w-24" />
           <img alt="logo3" src="/images/l4.png" className="w-16 sm:w-24" />

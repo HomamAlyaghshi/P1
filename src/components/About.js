@@ -81,7 +81,7 @@ const About = () => {
           if this could be the start of something beautiful
         </p>
         <Link to="/project-single">
-          <button className="bg-cyan-500 text-white p-3 m-5 px-8 py-2">
+          <button className="bg-cyan-500 text-white p-3 m-5 px-8 py-2 hover:bg-cyan-600 hover:text-xl hover:text-black transition-all duration-700">
             Let's Talk
           </button>
         </Link>
