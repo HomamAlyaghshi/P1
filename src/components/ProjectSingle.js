@@ -28,7 +28,6 @@ const projects = [
     client: "Jane Smith",
     date: "10.12.2019",
   },
-  // يمكنك إضافة المزيد من المشاريع هنا
 ];
 
 const ProjectSingle = () => {
@@ -93,7 +92,7 @@ const ProjectSingle = () => {
         <div className="bg-white p-4 lg:p-6 text-black flex justify-between items-center shadow-md">
           <button
             onClick={goToPreviousProject}
-            className="font-mono font-bold  hover:underline"
+            className="font-mono font-bold  hover:underline hover:text-cyan-400"
           >
             &lt; PREVIOUS PROJECT
           </button>
@@ -102,7 +101,7 @@ const ProjectSingle = () => {
           </span>
           <button
             onClick={goToNextProject}
-            className="font-mono font-bold  hover:underline"
+            className="font-mono font-bold  hover:underline hover:text-cyan-400"
           >
             NEXT PROJECT &gt;
           </button>

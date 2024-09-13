@@ -36,7 +36,7 @@ const GridPic = () => {
   return (
     <div>
       {/* Grid of photos */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 w-full h-full p-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4  w-full h-full ">
         {Array.from({ length: 12 }).map((_, index) => (
           <div
             key={index}

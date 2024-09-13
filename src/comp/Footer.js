@@ -36,9 +36,24 @@ const Footer = () => {
           {/* العمود الخامس */}
           <div className="flex flex-col justify-center text-center sm:text-left">
             <p className="font-bold text-sm mb-2">Follow Us</p>
-            <p className="text-xs mb-1">Facebook</p>
-            <p className="text-xs mb-1">Instagram</p>
-            <p className="text-xs mb-1">Twitter</p>
+            <a
+              href="https://www.facebook.com"
+              className="text-xs mb-1 hover:underline"
+            >
+              Facebook
+            </a>
+            <a
+              href="https://www.instagram.com"
+              className="text-xs mb-1 hover:underline"
+            >
+              Instagram
+            </a>
+            <a
+              href="https://www.twitter.com"
+              className="text-xs mb-1 hover:underline"
+            >
+              Twitter
+            </a>
             <p className="text-xs">Dribbble</p>
           </div>
         </div>
