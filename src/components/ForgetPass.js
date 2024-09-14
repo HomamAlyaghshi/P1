@@ -19,14 +19,14 @@ const ForgotPassword = () => {
             <input
               id="email"
               type="email"
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-cyan-500"
               placeholder="Enter your email"
             />
           </div>
 
           <button
             type="submit"
-            className="w-full bg-blue-500 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300"
+            className="w-full bg-cyan-500 text-white font-bold py-2 px-4 rounded-md hover:bg-cyan-600 transition duration-300"
           >
             Send Reset Link
           </button>
@@ -34,7 +34,7 @@ const ForgotPassword = () => {
 
         <p className="text-center text-gray-600 mt-4">
           Remembered your password?{" "}
-          <a href="/login" className="text-blue-500">
+          <a href="/login" className="text-cyan-500">
             Log In
           </a>
         </p>
