@@ -13,24 +13,39 @@ const Footer = () => {
           </div>
           {/* العمود الثاني */}
           <div className="flex flex-col justify-center text-center sm:text-left">
-            <p className="font-bold text-sm mb-2">Contact</p>
+            <a
+              href="/contact"
+              className="font-bold text-sm mb-2 hover:underline"
+            >
+              Contact
+            </a>
             <p className="text-xs mb-1">hello@gmail.com</p>
             <p className="text-xs">+3423432423432</p>
           </div>
           {/* العمود الثالث */}
           <div className="flex flex-col justify-center text-center sm:text-left">
             <p className="font-bold text-sm mb-2">Quick Links</p>
-            <p className="text-xs mb-1">Projects</p>
-            <p className="text-xs mb-1">Service</p>
-            <p className="text-xs mb-1">About</p>
+            <a href="/project-single" className="text-xs mb-1 hover:underline">
+              Projects
+            </a>
+            <a href="/service" className="text-xs mb-1 hover:underline">
+              Service
+            </a>
+            <a href="/about" className="text-xs mb-1 hover:underline">
+              About
+            </a>
             <p className="text-xs">Career</p>
           </div>
           {/* العمود الرابع */}
           <div className="flex flex-col justify-center text-center sm:text-left">
             <p className="font-bold text-sm mb-2">Explore</p>
-            <p className="text-xs mb-1">News</p>
+            <a href="/main" className="text-xs mb-1 hover:underline">
+              News
+            </a>
             <p className="text-xs mb-1">Events</p>
-            <p className="text-xs mb-1">Contact</p>
+            <a href="/contact" className="text-xs mb-1 hover:underline">
+              Contact
+            </a>
             <p className="text-xs">Legals</p>
           </div>
           {/* العمود الخامس */}
