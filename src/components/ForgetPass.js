@@ -34,7 +34,7 @@ const ForgotPassword = () => {
 
         <p className="text-center text-gray-600 mt-4">
           Remembered your password?{" "}
-          <a href="/login" className="text-cyan-500">
+          <a href="/" className="text-cyan-500">
             Log In
           </a>
         </p>

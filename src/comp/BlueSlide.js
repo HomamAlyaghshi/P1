@@ -9,7 +9,7 @@ import {
 const BlueSlide = () => {
   return (
     <div className="relative w-full h-52 bg-cyan-400">
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 h-full p-4">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 h-full p-4 ">
         {/* العمود الأول */}
         <div className="flex items-center">
           <div className="w-12 h-12 flex items-center justify-center">
