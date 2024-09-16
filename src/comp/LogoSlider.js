@@ -44,30 +44,34 @@ const LogoSlider = () => {
           <img
             alt="logo3"
             src="/images/l4.png"
-            className="w-32 sm:w-48 mx-2"
+            className="w-16 sm:w-40 mx-2"
           />{" "}
           {/* Add margin to images */}
         </div>
         <div className="flex justify-center p-2">
-          <img alt="logo4" src="/images/l5.png" className="w-32 sm:w-48 mx-2" />
+          <img alt="logo4" src="/images/l5.png" className="w-16 sm:w-40 mx-2" />
         </div>
         <div className="flex justify-center p-2">
-          <img alt="logo1" src="/images/l1.png" className="w-32 sm:w-48 mx-2" />
+          <img alt="logo1" src="/images/l1.png" className="w-16 sm:w-40 mx-2" />
         </div>
         <div className="flex justify-center p-2">
-          <img alt="logo2" src="/images/l3.png" className="w-32 sm:w-48 mx-2" />
+          <img alt="logo2" src="/images/l3.png" className="w-16 sm:w-40 mx-2" />
         </div>
         <div className="flex justify-center p-2">
-          <img alt="logo3" src="/images/l4.png" className="w-32 sm:w-48 mx-2" />
+          <img alt="logo3" src="/images/l4.png" className="w-16 sm:w-40 mx-2" />
         </div>
         <div className="flex justify-center p-2">
-          <img alt="logo4" src="/images/l5.png" className="w-32 sm:w-48 mx-2" />
+          <img alt="logo4" src="/images/l5.png" className="w-16 sm:w-40 mx-2" />
         </div>
         <div className="flex justify-center p-2">
-          <img alt="logo1" src="/images/l1.png" className="w-32 sm:w-48 mx-2" />
+          <img
+            alt="logo1"
+            src="/images/l6.png"
+            className="w-16 sm:w-48 pt-3 mx-2"
+          />
         </div>
         <div className="flex justify-center p-2">
-          <img alt="logo2" src="/images/l3.png" className="w-32 sm:w-48 mx-2" />
+          <img alt="logo2" src="/images/l7.png" className="w-16 sm:w-40 mx-2" />
         </div>
       </Slider>
     </div>
